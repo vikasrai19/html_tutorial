@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index3.css">
+    <link rel="stylesheet" href="index4.css">
     <title>HTML Tutorial</title>
 </head>
 
@@ -14,20 +14,15 @@
             Form
         </h1>
         <form onsubmit="submitForm();" class="login-form" method="post">
-            <div class="names">
-                <div class="name-field">
-                    <label for="name">First Name</label>
-                    <input type="text" name="name" id="name" class="input name" placeholder="First Name">
-                </div>
-                <div class="name-field">
-                    <label for="sname">Last Name</label>
-                    <input type="text" name="sname" id="sname" class="input name" placeholder="Last Name">
-                </div>
-            </div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" class="input email" placeholder="Email">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" class="input password" placeholder="Password">
+            <label for="name"><span>Name</span>
+                <input type="text" name="name" id="name" class="input name" placeholder="Name">
+            </label>
+            <label for="email"> <span>Email</span>
+                <input type="email" name="email" id="email" class="input email" placeholder="Email">
+            </label>
+            <label for="password"> <span>Password</span>
+                <input type="password" name="password" id="password" class="input password" placeholder="Password">
+            </label>
             <input type="submit" value="Submit" class="submit-button">
         </form>
     </div>

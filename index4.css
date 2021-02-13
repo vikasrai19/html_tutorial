@@ -1,0 +1,52 @@
+body{
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div{
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 5px 20px grey;
+    border-radius: 10px;
+}
+
+.main-div:hover{
+    box-shadow: 2px 5px 20px black;
+}
+
+.main-div h1{
+    font-size: 40.0
+}
+
+form.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+form.login-form label{
+    display: flex;
+    background-color: teal;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+
+form.login-form label span{
+    padding: 3px 10px;
+    color:white;
+    font-size: 18;
+}
+
+form.login-form label input.input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius:0 5px 5px 0px;
+}
