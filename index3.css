@@ -1,0 +1,73 @@
+body{
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div{
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 5px 20px grey;
+    border-radius: 10px;
+}
+
+.main-div:hover{
+    box-shadow: 2px 5px 20px black;
+}
+
+.main-div h1{
+    font-size: 40.0
+}
+
+form.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+form.login-form label{
+    font-size: 20.0;
+    color:black;
+}
+
+form.login-form input.input{
+    height: 30px;
+    width: 150px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: .9px solid black;
+}
+
+form.login-form input.email, form.login-form input.password{
+    width : 100%;
+}
+
+form.login-form input.submit-button{
+    align-self: center;
+    margin-top: 10px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+}
+
+form.login-form .names{
+    display: flex;
+}
+
+form.login-form .names .name-field{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}

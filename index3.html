@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <title>HTML Tutorial</title>
+</head>
+<body>
+    <div class="main-div">
+        <h1 class="title">
+            Form
+        </h1>
+        <form onsubmit="submitForm();" class="login-form" method="post">
+            <div class="names">
+                <div class="name-field">
+                    <label for="name">First Name</label>
+                    <input type="text" name="name" id="name" class="input name">
+                </div>
+               <div class="name-field">
+                <label for="sname">Last Name</label>
+                <input type="text" name="sname" id="sname" class="input name">
+               </div>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="input email" >
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="input password">
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+</body>
+
+<script>
+    function submitForm(){
+        const email = document.getElementById('email');
+        const name = document.getElementById('name');
+        const password = document.getElementById('password');
+        const sname = document.getElementById('sname');
+        event.preventDefault();
+         if(name.value != '' && email.value != '' && password.value != '' && sname.value != ''){
+            alert("Email : " + email.value + "\nName : " + name.value + " " +sname.value + "\nWelcome to our website");
+            name.value = '';
+            email.value = '';
+            password.value = '';
+            sname.value = '';
+        }else{
+            alert("Please enter the credentials properly")
+        }        
+    }
+</script>
+</html>
